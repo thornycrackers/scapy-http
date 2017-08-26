@@ -15,7 +15,7 @@ def _canonicalize_header(name):
     return name.strip().lower()
 
 def _parse_headers(s):
-    headers = s.split("\r\n")
+    headers = s.split(b"\r\n")
     headers_found = {}
     for header_line in headers:
         try:
